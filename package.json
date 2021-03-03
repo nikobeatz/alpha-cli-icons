@@ -5,8 +5,7 @@
   "author": "Jun",
   "license": "MIT",
   "scripts": {
-    "pixo": "pixo icons/feather-icons --out-dir ./",
-    "mkdir": "npx mkdirp ./dist"
+    "generate": "node transform.js"
   },
   "dependencies": {
     "pixo": "1.1.2"
