@@ -12,6 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: instal svg transform pachage
-        run: npm i pixo 
-      - name: transform icons into components
-        run: pixo icons/feather-icons --out-dir dist
+        run: |
+          npm i pixo 
+          pixo icons/feather-icons --out-dir dist
