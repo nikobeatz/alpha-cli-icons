@@ -25,6 +25,7 @@ console.log("icons", icons)
 for (const icon of icons) {
   const svg = fs.readFileSync(icon, 'utf8');
   const componentName = path.parse(icon).name;
+  console.log("icon", icon, componentName)
   const componentCode = svgr.sync(
     svg,
     {
