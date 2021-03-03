@@ -4,7 +4,7 @@ const glob = require('glob');
 const svgr = require('@svgr/core').default;
 
 const ICONS_SOURCE_DIR = './icons/feather-icons';
-const COMPONENTS_DIR = './components';
+const COMPONENTS_DIR = 'components';
 
 // Template to generate named exports instaed of default ones
 const iconComponentTemplate = (
