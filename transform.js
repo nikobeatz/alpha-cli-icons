@@ -48,7 +48,7 @@ for (const icon of icons) {
     { componentName }
   );
   console.log("icon", icon, componentCode)
-  fs.writeFileSync(`${COMPONENTS_DIR}/${componentName}.tsx`, componentCode, , function(err) {
+  fs.writeFileSync(`${COMPONENTS_DIR}/${componentName}.tsx`, componentCode, function(err) {
     if (err) 
         return console.error(err); 
     fs.readFile(`${COMPONENTS_DIR}/${componentName}.tsx`, 'utf-8', function (err, data) {
