@@ -47,14 +47,12 @@ for (const icon of icons) {
     },
     { componentName }
   );
-  console.log("icon", icon, componentCode)
-  fs.writeFileSync(`${COMPONENTS_DIR}/${componentName}.tsx`, componentCode, function(err) {
-    if (err) 
-        return console.error(err); 
-    fs.readFile(`${COMPONENTS_DIR}/${componentName}.tsx`, 'utf-8', function (err, data) {
+  console.log("icon", icon)
+  fs.writeFileSync(`${COMPONENTS_DIR}/${componentName}.tsx`, componentCode);
+  console.log("icon", componentCode)
+  fs.readFile(`${COMPONENTS_DIR}/${componentName}.tsx`, 'utf-8', function (err, data) {
         if (err)
             return console.error('err',err);
         console.log('data',data);
     });
-});
 }
