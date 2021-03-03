@@ -5,7 +5,7 @@
   "author": "Jun",
   "license": "MIT",
   "scripts": {
-    "pixo": "pixo icons/feather-icons --out-dir ./",
+    "pixo": "$ pixo icons/feather-icons --out-dir ./",
     "mkdir": "npx mkdirp ./dist"
   },
   "dependencies": {
