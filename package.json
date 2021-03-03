@@ -1,0 +1,14 @@
+{
+"name": "alpha-cli-icons",
+  "version": "1.0.0",
+  "description": "svg icons transformer.",
+  "author": "Jun",
+  "license": "MIT",
+  "scripts": {
+  },
+  "dependencies": {
+    "pixo": "1.1.2"
+  },
+  "devDependencies": {
+  }
+}
