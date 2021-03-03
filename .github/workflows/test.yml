@@ -13,6 +13,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: instal svg transform pachage
         run: |
-          npm i pixo 
-          npm run mkdir
-          npm run pixo
+          npm i @svgr/core
+          npm i @svgr/plugin-svgo
+          npm i @svgr/plugin-prettier
+          npm i glob
+          npm run generate
