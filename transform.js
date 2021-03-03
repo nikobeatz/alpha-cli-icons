@@ -25,7 +25,7 @@ console.log("icons", icons)
 for (const icon of icons) {
   const svg = fs.readFileSync(icon, 'utf8');
   const componentName = path.parse(icon).name;
-  console.log("icon", icon, componentName)
+  
   const componentCode = svgr.sync(
     svg,
     {
@@ -47,8 +47,13 @@ for (const icon of icons) {
     },
     { componentName }
   );
+  console.log("icon", icon, componentCode)
   fs.writeFileSync(
     `${COMPONENTS_DIR}/${componentName}.tsx`,
-    componentCode
-  );
+    componentCode,
+    function(error){
+ 
+      if(error) throw error; // если возникла ошибка
+      console.log(error);
+});
 }
