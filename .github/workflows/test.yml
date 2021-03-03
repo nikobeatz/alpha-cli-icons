@@ -14,4 +14,4 @@ jobs:
       - name: instal svg transform pachage
         run: |
           npm i pixo 
-          npm pixo icons/feather-icons --out-dir dist
+          npm run pixo icons/feather-icons --out-dir dist
