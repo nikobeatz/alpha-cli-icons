@@ -25,9 +25,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: generate bundle
-        run: |
-          npm i
-          npm run build:bundle
+        run: npm i
+      - name: push changes in repo
+        uses: mikeal/publish-to-github-action@master
+        env:
+            GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+            BRANCH_NAME: main
+      - name: run build bundle
+        run: npm run build:bundle
       - name: publish bundle
         run: |
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
