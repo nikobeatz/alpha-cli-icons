@@ -19,6 +19,7 @@ jobs:
             GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
             BRANCH_NAME: main
   buildComponents:
+    needs: updateVersion
     runs-on: ubuntu-latest
     steps:
       - name: install all packages
