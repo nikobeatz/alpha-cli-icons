@@ -17,7 +17,7 @@ jobs:
           npm i glob
           git config --global user.email "nikobeatz91205@gmail.com"
           git config --global user.name "nikobeatz"
-          npm version patch -m "update version"
+          npm run update-version
           npm run generate
       - name: push changes in repo
         uses: mikeal/publish-to-github-action@master
