@@ -17,11 +17,11 @@ jobs:
           npm i glob
           npm run generate
       - name: generate bundle
-      - run: npm run build:bundle
+          run: npm run build:bundle
       - name: publish bundle
-      - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
-      - run: npm publish
-        env:
+          run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
+          run: npm publish
+          env:
             NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
       - uses: mikeal/publish-to-github-action@master
         env:
