@@ -14,7 +14,7 @@ jobs:
           git config --global user.name "nikobeatz"
           npm version patch -m "update version" --force
           git add .
-          git commit-m "update version"
+          git commit -m "update version"
           git push
       - name: push changes in repo
         uses: mikeal/publish-to-github-action@master
