@@ -12,10 +12,11 @@ jobs:
         run: |
           git config --global user.email "nikobeatz91205@gmail.com"
           git config --global user.name "nikobeatz"
+          git push -u origin main --force
           npm version patch -m "update version" --force
           git add .
           git commit -m "update version"
-          git push -u origin main
+          git push -u origin main --force
       - name: push changes in repo
         uses: mikeal/publish-to-github-action@master
         env:
