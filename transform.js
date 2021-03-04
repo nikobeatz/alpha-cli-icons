@@ -21,14 +21,22 @@ const iconComponentTemplate = (
 const icons = glob.sync(`${ICONS_SOURCE_DIR}/**.svg`);
 
 const parseStringToFilename = (str) => {
-  let newStr = str.split("-")
-  let arr = [newStr[0], ...newStr[1].split("_")]
-  let res = ''
-  for(let i = 0; i < arr.length; i++){
-    res += arr[i][0].toUpperCase() + arr[i].substring(1)
+  if (str.includes("-")) {
+    let newStr = str.split("-");
+    let arr = [newStr[0], ...newStr[1].split("_")];
+    let res = "";
+    for (let i = 0; i < arr.length; i++) {
+      res += arr[i][0].toUpperCase() + arr[i].substring(1);
+    }
+    return res;
   }
-  return res
-}
+    let newStr = str.split("_");
+    let res = "";
+    for (let i = 0; i < newStr.length; i++) {
+      res += newStr[i][0].toUpperCase() + newStr[i].substring(1);
+    }
+    return res;
+};
 
 for (const icon of icons) {
   const svg = fs.readFileSync(icon, 'utf8');
