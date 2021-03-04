@@ -1,1 +1,1 @@
-export { default as CloudSnowS } from './CloudSnowS';
+export { CloudSnowS } from './CloudSnowS';
