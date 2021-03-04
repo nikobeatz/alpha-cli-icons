@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-rm -rf publish
+$ rm -rf publish
 mkdir publish
 cp -r {icons,components,package.json} publish
 cd publish
