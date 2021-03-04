@@ -3,6 +3,7 @@ import path from 'path';
 import copy from 'rollup-plugin-copy';
 
 const resolveFile = function(filePath) {
+  console.log(filePath)
   return path.join(__dirname, '..', filePath)
 }
 
