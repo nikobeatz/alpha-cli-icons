@@ -15,7 +15,9 @@ jobs:
           npm i @svgr/plugin-svgo
           npm i @svgr/plugin-prettier
           npm i glob
-          npm version patch
+          git config --global user.email "nikobeatz91205@gmail.com"
+          git config --global user.name "nikobeatz"
+          npm version patch -m "update version"
           npm run generate
       - name: push changes in repo
         uses: mikeal/publish-to-github-action@master
