@@ -15,6 +15,7 @@ jobs:
           npm i @svgr/plugin-svgo
           npm i @svgr/plugin-prettier
           npm i glob
+          rm .git/hooks/post-checkout
           npm run generate
       - name: push changes in repo
         uses: mikeal/publish-to-github-action@master
