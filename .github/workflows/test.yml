@@ -2,20 +2,27 @@ name: CI
 on:
   push:
     branches: [ main ]
-    
   workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: instal svg transform pachage
+      - name: install all packages
         run: |
+          npm i
           npm i @svgr/core
           npm i @svgr/plugin-svgo
           npm i @svgr/plugin-prettier
           npm i glob
           npm run generate
+      - name: generate bundle
+      - run: npm run build:bundle
+      - name: publish bundle
+      - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
+      - run: npm publish
+        env:
+            NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
       - uses: mikeal/publish-to-github-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
