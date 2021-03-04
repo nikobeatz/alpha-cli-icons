@@ -7,7 +7,7 @@ const resolveFile = function(filePath) {
 }
 
 export default {
-  input: 'src/icons.js',
+  input: 'components/icons.js',
   output: {
     file: 'dist/index.js',
     format: 'cjs',
@@ -16,7 +16,7 @@ export default {
   plugins: [
     copy({
       targets: [
-        { src: resolveFile('src/icons.d.ts'), dest: resolveFile('dist/') }
+        { src: resolveFile('components/icons.js'), dest: resolveFile('dist/') }
       ]
     }),
     babel({
