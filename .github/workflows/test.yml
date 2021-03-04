@@ -26,7 +26,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         with:
-          target-branch: 'main'
           default: minor
       - name: push changes in repo
         uses: mikeal/publish-to-github-action@master
