@@ -10,7 +10,6 @@ jobs:
       - uses: actions/checkout@v2
       - name: install all packages
         run: |
-          npm i
           npm i @svgr/core
           npm i @svgr/plugin-svgo
           npm i @svgr/plugin-prettier
@@ -26,7 +25,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: generate bundle
-        run: npm run build:bundle
+        run: |
+          npm i
+          npm run build:bundle
       - name: publish bundle
         run: |
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
