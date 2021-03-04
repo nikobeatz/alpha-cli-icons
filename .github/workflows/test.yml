@@ -27,7 +27,6 @@ jobs:
         with:
           tag-prefix: ''
           default: minor
-          target-branch: 'develop'
       - name: run build bundle
         run: npm run build:bundle
       - name: publish bundle
