@@ -20,10 +20,6 @@ jobs:
         env:
             GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
             BRANCH_NAME: main
-  makeBundle:
-    needs: buildComponents
-    runs-on: ubuntu-latest
-    steps:
       - name: generate bundle
         run: npm i
       - name: push changes in repo
