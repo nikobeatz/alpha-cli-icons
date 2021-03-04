@@ -17,8 +17,8 @@ jobs:
           npm i glob
           npm run generate
       - name: push changes in repo
-      - uses: mikeal/publish-to-github-action@master
-      - env:
+        uses: mikeal/publish-to-github-action@master
+        env:
             GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
             BRANCH_NAME: main
   makeBundle:
