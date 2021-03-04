@@ -15,7 +15,11 @@ const iconComponentTemplate = (
   template.smart({ plugins: ['typescript'] }).ast`
         ${imports}
         ${'\n'}
-        export const ${componentName} = (props: React.SVGProps<SVGSVGElement>) => ${jsx};
+        const ${componentName} = (props: React.SVGProps<SVGSVGElement>) => ${
+jsx
+}
+export default ${componentName}
+ ;
     `;
 
 const icons = glob.sync(`${ICONS_SOURCE_DIR}/**.svg`);
@@ -46,6 +50,7 @@ for (const icon of icons) {
     { componentName }
   );
   fs.writeFileSync(`${COMPONENTS_DIR}/${componentName}.tsx`, componentCode);
+  fs.writeFileSync(`${COMPONENTS_DIR}/icons}.js`, `export { default as ${componentName} } from './${componentName}';`);
   fs.readFile(`${COMPONENTS_DIR}/${componentName}.tsx`, 'utf-8', function (err, data) {
         if (err)
             return console.error('err',err);
