@@ -20,35 +20,9 @@ const iconComponentTemplate = (
 
 const icons = glob.sync(`${ICONS_SOURCE_DIR}/**.svg`);
 
-const parseStringToFilename = (str) => {
-  
-  str = str.slice(5)
-  console.log('parseStr', str)
-  if (str.includes("-")) {
-    let newStr = str.split("-");
-    let arr = [newStr[0], ...newStr[1].split("_")];
-    let res = "";
-    for (let i = 0; i < arr.length; i++) {
-      res += arr[i][0].toUpperCase() + arr[i].substring(1);
-    }
-    console.log('parseStr', res)
-    return res;
-  }
-    let newStr = str.split("_");
-    let res = "";
-    for (let i = 0; i < newStr.length; i++) {
-      res += newStr[i][0].toUpperCase() + newStr[i].substring(1);
-    }
-  console.log('parseStr', res)
-    return res;
-};
-
 for (const icon of icons) {
   const svg = fs.readFileSync(icon, 'utf8');
   const componentName = path.parse(icon).name;
-  const newComponentName = parseStringToFilename(componentName);
-  
-  console.log(newComponentName)
   
   const componentCode = svgr.sync(
     svg,
@@ -69,12 +43,12 @@ for (const icon of icons) {
       // Replace dimentions
       svgProps: { height: 32, width: 32, viewBox: '0 0 32 32' }
     },
-    { newComponentName }
+    { componentName }
   );
-  console.log("icon", newComponentName)
-  fs.writeFileSync(`${COMPONENTS_DIR}/${newComponentName}.tsx`, componentCode);
-  console.log("icon", newComponentName)
-  fs.readFile(`${COMPONENTS_DIR}/${newComponentName}.tsx`, 'utf-8', function (err, data) {
+  console.log("icon", componentName)
+  fs.writeFileSync(`${COMPONENTS_DIR}/${componentName}.tsx`, componentCode);
+  console.log("icon", componentName)
+  fs.readFile(`${COMPONENTS_DIR}/${componentName}.tsx`, 'utf-8', function (err, data) {
         if (err)
             return console.error('err',err);
         console.log('data',data);
