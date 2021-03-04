@@ -1,6 +1,7 @@
 import babel from '@rollup/plugin-babel';
 import path from 'path';
 import copy from 'rollup-plugin-copy';
+import typescript from '@rollup/plugin-typescript';
 
 const resolveFile = function(filePath) {
   const newPath = path.join(__dirname, '..', filePath)
