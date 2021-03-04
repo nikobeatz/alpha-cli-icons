@@ -16,6 +16,7 @@ export default {
   },
   external: ['react', 'prop-types'],
   plugins: [
+    typescript(),
     copy({
       targets: [
         { src: resolveFile('components/icons.js'), dest: resolveFile('dist/') }
