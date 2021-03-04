@@ -10,6 +10,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: install all packages
         run: |
+          npm i
           npm i @svgr/core
           npm i @svgr/plugin-svgo
           npm i @svgr/plugin-prettier
@@ -20,8 +21,13 @@ jobs:
         env:
             GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
             BRANCH_NAME: main
-      - name: generate bundle
-        run: npm i
+      - name:  'Automated Version Bump'
+        uses:  'phips28/gh-action-bump-version@master'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        with:
+          target-branch: 'main'
+          default: minor
       - name: push changes in repo
         uses: mikeal/publish-to-github-action@master
         env:
