@@ -27,6 +27,6 @@ jobs:
       - name: publish bundle
         run: |
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
-          npm publish
+          npm run publish
           env:
             NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
