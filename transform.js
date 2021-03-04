@@ -42,7 +42,7 @@ const parseStringToFilename = (str) => {
 for (const icon of icons) {
   const svg = fs.readFileSync(icon, 'utf8');
   const componentName = path.parse(icon).name;
-  const newComponentName = parseStringToFilename();
+  const newComponentName = parseStringToFilename(componentName);
   
   console.log(newComponentName)
   
