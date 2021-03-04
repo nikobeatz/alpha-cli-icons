@@ -21,6 +21,7 @@ const iconComponentTemplate = (
 const icons = glob.sync(`${ICONS_SOURCE_DIR}/**.svg`);
 
 const parseStringToFilename = (str) => {
+  str = str.slice(5)
   if (str.includes("-")) {
     let newStr = str.split("-");
     let arr = [newStr[0], ...newStr[1].split("_")];
