@@ -18,9 +18,9 @@ jobs:
           npm run generate
       - name: push changes in repo
       - uses: mikeal/publish-to-github-action@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          BRANCH_NAME: main
+      - env:
+            GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+            BRANCH_NAME: main
   makeBundle:
     needs: buildComponents
     runs-on: ubuntu-latest
