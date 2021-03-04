@@ -21,7 +21,9 @@ const iconComponentTemplate = (
 const icons = glob.sync(`${ICONS_SOURCE_DIR}/**.svg`);
 
 const parseStringToFilename = (str) => {
+  
   str = str.slice(5)
+  console.log('parseStr', str)
   if (str.includes("-")) {
     let newStr = str.split("-");
     let arr = [newStr[0], ...newStr[1].split("_")];
@@ -29,6 +31,7 @@ const parseStringToFilename = (str) => {
     for (let i = 0; i < arr.length; i++) {
       res += arr[i][0].toUpperCase() + arr[i].substring(1);
     }
+    console.log('parseStr', res)
     return res;
   }
     let newStr = str.split("_");
@@ -36,6 +39,7 @@ const parseStringToFilename = (str) => {
     for (let i = 0; i < newStr.length; i++) {
       res += newStr[i][0].toUpperCase() + newStr[i].substring(1);
     }
+  console.log('parseStr', res)
     return res;
 };
 
@@ -67,9 +71,9 @@ for (const icon of icons) {
     },
     { componentName }
   );
-  console.log("icon", icon)
+  console.log("icon", newComponentName)
   fs.writeFileSync(`${COMPONENTS_DIR}/${newComponentName}.tsx`, componentCode);
-  console.log("icon", componentCode)
+  console.log("icon", newComponentName)
   fs.readFile(`${COMPONENTS_DIR}/${newComponentName}.tsx`, 'utf-8', function (err, data) {
         if (err)
             return console.error('err',err);
