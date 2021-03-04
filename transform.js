@@ -69,7 +69,7 @@ for (const icon of icons) {
       // Replace dimentions
       svgProps: { height: 32, width: 32, viewBox: '0 0 32 32' }
     },
-    { componentName }
+    { newComponentName }
   );
   console.log("icon", newComponentName)
   fs.writeFileSync(`${COMPONENTS_DIR}/${newComponentName}.tsx`, componentCode);
