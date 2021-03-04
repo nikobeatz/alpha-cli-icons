@@ -1,1 +1,1 @@
-export { default as CloudSnowS } from './components/CloudSnowS';
+export { default as CloudSnowS } from './CloudSnowS';
