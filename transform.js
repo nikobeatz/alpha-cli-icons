@@ -50,7 +50,7 @@ for (const icon of icons) {
     { componentName }
   );
   fs.writeFileSync(`${COMPONENTS_DIR}/${componentName}.tsx`, componentCode);
-  fs.writeFileSync(`${COMPONENTS_DIR}/icons}.js`, `export { default as ${componentName} } from './${componentName}';`);
+  fs.writeFileSync(`${COMPONENTS_DIR}/icons.js`, `export { default as ${componentName} } from './${componentName}';`);
   fs.readFile(`${COMPONENTS_DIR}/${componentName}.tsx`, 'utf-8', function (err, data) {
         if (err)
             return console.error('err',err);
