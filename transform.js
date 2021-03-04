@@ -41,9 +41,10 @@ const parseStringToFilename = (str) => {
 
 for (const icon of icons) {
   const svg = fs.readFileSync(icon, 'utf8');
-  const componentName = parseStringToFilename(path.parse(icon).name);
+  const componentName = path.parse(icon).name;
+  const newComponentName = parseStringToFilename();
   
-  console.log(componentName)
+  console.log(newComponentName)
   
   const componentCode = svgr.sync(
     svg,
@@ -67,9 +68,9 @@ for (const icon of icons) {
     { componentName }
   );
   console.log("icon", icon)
-  fs.writeFileSync(`${COMPONENTS_DIR}/${componentName}.tsx`, componentCode);
+  fs.writeFileSync(`${COMPONENTS_DIR}/${newComponentName}.tsx`, componentCode);
   console.log("icon", componentCode)
-  fs.readFile(`${COMPONENTS_DIR}/${componentName}.tsx`, 'utf-8', function (err, data) {
+  fs.readFile(`${COMPONENTS_DIR}/${newComponentName}.tsx`, 'utf-8', function (err, data) {
         if (err)
             return console.error('err',err);
         console.log('data',data);
