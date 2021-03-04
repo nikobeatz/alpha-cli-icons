@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export const CloudOffS = (props: React.SVGProps<SVGSVGElement>) => (
+const CloudOffS = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={32}
@@ -21,3 +21,5 @@ export const CloudOffS = (props: React.SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
+
+export default CloudOffS;
