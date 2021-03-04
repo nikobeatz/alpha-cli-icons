@@ -22,10 +22,10 @@ jobs:
             GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
             BRANCH_NAME: main
       - name:  'Automated Version Bump'
-        uses:  'phips28/gh-action-bump-version@master'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        id: version-bump
+        uses: "phips28/gh-action-bump-version@master"
         with:
+          tag-prefix: ''
           default: minor
       - name: push changes in repo
         uses: mikeal/publish-to-github-action@master
