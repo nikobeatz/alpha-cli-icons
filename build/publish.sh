@@ -1,4 +1,4 @@
-sudo rm -rf publish
+cd .. && rm -rf publish
 mkdir publish
 cp -r {icons,components,package.json} publish
 cd publish
