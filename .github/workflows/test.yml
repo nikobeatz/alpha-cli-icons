@@ -18,22 +18,17 @@ jobs:
         run: |
           npm i
           npm run generate
-      - name: push changes in repo
-        uses: mikeal/publish-to-github-action@master
-        env:
-            GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-            BRANCH_NAME: main
       - name: run build bundle
         run: npm run build
+      # - name: publish bundle
+      #   run: |
+      #     echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
+      #     npm run pub
+      #     env:
+      #       NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
       - name: push changes in repo
         uses: mikeal/publish-to-github-action@master
         env:
             GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
             BRANCH_NAME: main
-      - name: publish bundle
-        run: |
-          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
-          npm run pub
-          env:
-            NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
 
