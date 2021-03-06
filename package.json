@@ -10,7 +10,7 @@
     "release-patch": "npm version patch -m 'patch version'",
     "build": "sudo rm -rf dist && node_modules/.bin/rollup --c ./scripts/rollup.config.bundle.js",
     "update-version": "npm version patch -m 'update version'",
-    "pub": "ls && rm -rf publish && mkdir publish && cp -r {icons,dist,package.json} publish && cd publish && npm publish"
+    "pub": "ls && rm -rf publish && mkdir publish && cp -r {dist,package.json} publish && cd publish && npm publish"
   },
   "devDependencies": {
     "@rollup/plugin-babel": "^5.1.0",
