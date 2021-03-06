@@ -4,7 +4,7 @@
   "description": "svg icons transformer.",
   "author": "Jun",
   "license": "MIT",
-  "main": "./dist/index.js",
+  "main": "./index.js",
   "scripts": {
     "generate": "node scripts/transform.js",
     "release-patch": "npm version patch -m 'patch version'",
