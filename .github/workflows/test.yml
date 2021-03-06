@@ -8,6 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: patch package version
+        
+        run: |
+          git config --global user.email "nikobeatz91205@gmail.com"
+          git config --global user.name "nikobeatz"
+          npm run release-patch
       - name: install all packages
         run: |
           npm i
@@ -18,7 +24,7 @@ jobs:
             GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
             BRANCH_NAME: main
       - name: run build bundle
-        run: npm run build:bundle
+        run: npm run build
       - name: push changes in repo
         uses: mikeal/publish-to-github-action@master
         env:
@@ -27,7 +33,7 @@ jobs:
       - name: publish bundle
         run: |
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
-          npm run publish
+          npm run pub
           env:
             NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
 

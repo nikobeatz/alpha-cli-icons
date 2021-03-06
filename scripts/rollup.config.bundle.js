@@ -3,16 +3,16 @@ import path from 'path';
 import copy from 'rollup-plugin-copy';
 import typescript from 'rollup-plugin-typescript2'
 
-const resolveFile = function(filePath) {
-  const newPath = path.join(__dirname, '..', filePath)
-  console.log('joined path', newPath, __dirname)
-  return newPath
-}
+// const resolveFile = function(filePath) {
+//   const newPath = path.join(__dirname, '..', filePath)
+//   console.log('joined path', newPath, __dirname)
+//   return newPath
+// }
 
 export default {
   input: 'components/index.ts',
   output: {
-    file: 'dist/index.js',
+    file: 'publish/index.js',
     format: 'cjs',
   },
   external: ['react', 'prop-types'],
@@ -26,11 +26,11 @@ export default {
 
     // // Resolve source maps to the original source
     // sourceMaps(),
-    copy({
-      targets: [
-        { src: resolveFile('components/icons.ts'), dest: resolveFile('dist/') }
-      ]
-    }),
+    // copy({
+    //   targets: [
+    //     { src: resolveFile('components/icons.ts'), dest: resolveFile('dist/') }
+    //   ]
+    // }),
     babel({
       exclude: 'node_modules/**',
     }),
