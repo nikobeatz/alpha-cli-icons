@@ -3,11 +3,11 @@ import path from 'path';
 import copy from 'rollup-plugin-copy';
 import typescript from 'rollup-plugin-typescript2'
 
-// const resolveFile = function(filePath) {
-//   const newPath = path.join(__dirname, '..', filePath)
-//   console.log('joined path', newPath, __dirname)
-//   return newPath
-// }
+const resolveFile = function(filePath) {
+  const newPath = path.join(__dirname, '..', filePath)
+  console.log('joined path', newPath, __dirname)
+  return newPath
+}
 
 export default {
   input: 'components/index.ts',
