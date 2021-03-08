@@ -26,11 +26,11 @@ export default {
 
     // // Resolve source maps to the original source
     // sourceMaps(),
-    // copy({
-    //   targets: [
-    //     { src: resolveFile('components/icons.ts'), dest: resolveFile('dist/') }
-    //   ]
-    // }),
+    copy({
+      targets: [
+        { src: resolveFile('components/icons.ts'), dest: resolveFile('dist/') }
+      ]
+    }),
     babel({
       exclude: 'node_modules/**',
     }),
