@@ -20,6 +20,10 @@ const ClockS = (props) => (React.createElement("svg", Object.assign({ xmlns: "ht
     React.createElement("path", { d: "M0 0h24v24H0z" }),
     React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M16.472 1.703a4.107 4.107 0 015.807 5.807c-.32.32-.84.32-1.161 0l-4.646-4.646a.821.821 0 010-1.161zm-8.98 0A4.107 4.107 0 001.685 7.51c.321.32.841.32 1.162 0l4.647-4.646c.32-.32.32-.84 0-1.162zm11.014 17.353a9.036 9.036 0 10-13.048 0l-2.348 3.13a.821.821 0 001.315.985L6.7 20.137a8.97 8.97 0 0010.564 0l2.276 3.034a.821.821 0 101.314-.985l-2.348-3.13zm-5.702-6.235c0 .178-.058.35-.165.493L10.175 16.6a.821.821 0 11-1.314-.986l2.3-3.067V7.892a.821.821 0 011.643 0v4.93z", fill: "currentColor" })));
 
+const ClockwiseS = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 32, height: 32, fill: "none", viewBox: "0 0 32 32" }, props),
+    React.createElement("path", { d: "M0 0h24v24H0z" }),
+    React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M16.472 1.703a4.107 4.107 0 015.807 5.807c-.32.32-.84.32-1.161 0l-4.646-4.646a.821.821 0 010-1.161zm-8.98 0A4.107 4.107 0 001.685 7.51c.321.32.841.32 1.162 0l4.647-4.646c.32-.32.32-.84 0-1.162zm11.014 17.353a9.036 9.036 0 10-13.048 0l-2.348 3.13a.821.821 0 001.315.985L6.7 20.137a8.97 8.97 0 0010.564 0l2.276 3.034a.821.821 0 101.314-.985l-2.348-3.13zm-5.702-6.235c0 .178-.058.35-.165.493L10.175 16.6a.821.821 0 11-1.314-.986l2.3-3.067V7.892a.821.821 0 011.643 0v4.93z", fill: "currentColor" })));
+
 const HomememeS = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 32, height: 32, fill: "none", viewBox: "0 0 32 32" }, props),
     React.createElement("path", { d: "M0 0h24v24H0z" }),
     React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M11.659 2.145a.21.21 0 01.244-.002l10.443 7.276a1.053 1.053 0 001.203-1.728L13.107.416a2.316 2.316 0 00-2.686.027L.434 7.703a1.053 1.053 0 001.238 1.703l9.987-7.26zm-7.811 9.309a2 2 0 01.805-1.604l5.953-4.431a2 2 0 012.345-.032l6.351 4.465a2 2 0 01.85 1.636v9.593a2 2 0 01-2 2H5.848a2 2 0 01-2-2v-9.627zm8.994 2.154a1.895 1.895 0 113.79 0 1.895 1.895 0 01-3.79 0z", fill: "currentColor" })));
@@ -48,6 +52,7 @@ exports.BookS = BookS;
 exports.CheckmarkRoudnedS = CheckmarkRoudnedS;
 exports.CircleS = CircleS;
 exports.ClockS = ClockS;
+exports.ClockwiseS = ClockwiseS;
 exports.HomeS = HomeS;
 exports.HomememeS = HomememeS;
 exports.LinkS = LinkS;
