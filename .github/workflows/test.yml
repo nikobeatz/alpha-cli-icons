@@ -9,11 +9,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: patch package version
-        
         run: |
           git config --global user.email "nikobeatz91205@gmail.com"
           git config --global user.name "nikobeatz"
           npm run release-patch
+      - name: push changes in repo
+        uses: mikeal/publish-to-github-action@master
+        env:
+            GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+            BRANCH_NAME: main
       - name: install all packages
         run: |
           npm i
