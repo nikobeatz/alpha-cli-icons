@@ -30,9 +30,7 @@ jobs:
             GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
             BRANCH_NAME: main
       - name: publish bundle
-        run: |
-          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
-          npm run pub
-          env:
-            NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+        uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_AUTH_TOKEN }}
 
