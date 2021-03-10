@@ -48,7 +48,9 @@ createIndexImportFile()
 for (const icon of icons) {
   const svg = fs.readFileSync(icon, 'utf8');
   const componentName = path.parse(icon).name;
-  fs.writeFileSync(`${COMPONENTS_DIR}/index.ts`, `export * from './${componentName}';`);
+
+  const svgProps = componentName.slice(-1) === "M" ? { height: 24, width: 24, viewBox: '0 0 24 24' } : { height: 16, width: 16, viewBox: '0 0 16 16' }
+  
   const componentCode = svgr.sync(
     svg,
     {
@@ -66,7 +68,7 @@ for (const icon of icons) {
         plugins: [{ convertColors: { currentColor: true } }]
       },
       // Replace dimentions
-      svgProps: { height: 32, width: 32, viewBox: '0 0 32 32' }
+      svgProps: svgProps
     },
     { componentName }
   );
