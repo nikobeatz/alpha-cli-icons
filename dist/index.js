@@ -354,6 +354,10 @@ const DateRangeS = (props) => (React.createElement("svg", Object.assign({ xmlns:
     React.createElement("path", { d: "M0 0h16v16H0z" }),
     React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M4.924 1.333a.513.513 0 00-.513.513v1.032A2.222 2.222 0 002.36 5.094v7.35c0 1.228.995 2.223 2.222 2.223h6.838a2.222 2.222 0 002.222-2.223v-7.35c0-1.17-.904-2.128-2.051-2.216V1.846a.513.513 0 10-1.026 0v1.026H8.514V1.846a.513.513 0 10-1.026 0v1.026H5.437V1.846a.513.513 0 00-.513-.513zm3.547 5a.556.556 0 010 1.111H5.138a.556.556 0 010-1.11H8.47zm3.333 3.334a.556.556 0 00-.555-.556H5.138a.556.556 0 000 1.111h6.11a.556.556 0 00.556-.555z", fill: "currentColor" })));
 
+const DeM = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 24, height: 24, fill: "none", viewBox: "0 0 24 24" }, props),
+    React.createElement("path", { d: "M0 0h24v25H0z" }),
+    React.createElement("path", { d: "M22.203 4.14H1.797C.805 4.14 0 4.945 0 5.937v3.444h24V5.937c0-.992-.805-1.797-1.797-1.797zM0 18.067c0 .992.805 1.797 1.797 1.797h20.406c.992 0 1.797-.805 1.797-1.797v-3.444H0v3.444zM24 9.381H0v5.241h24v-5.24z", fill: "currentColor" })));
+
 const DialogueM = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 24, height: 24, fill: "none", viewBox: "0 0 24 24" }, props),
     React.createElement("path", { d: "M0 0h24v24H0z" }),
     React.createElement("path", { d: "M10.221 2.002c-4.256 0-7.718 3.462-7.718 7.718 0 1.462.405 2.868 1.173 4.085l-1.132 2.817a.583.583 0 00.133.638.593.593 0 00.642.13l2.817-1.128a7.594 7.594 0 004.085 1.176c4.256 0 7.718-3.462 7.718-7.718s-3.462-7.718-7.718-7.718z", fill: "currentColor" }),
@@ -409,6 +413,13 @@ const DotsS = (props) => (React.createElement("svg", Object.assign({ xmlns: "htt
 const EditS = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 16, height: 16, fill: "none", viewBox: "0 0 16 16" }, props),
     React.createElement("path", { d: "M0 0h16v16H0z" }),
     React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M13.752 4.986c.03.075.046.155.045.236l-.043.03a.427.427 0 010 .086.617.617 0 010 .148.73.73 0 01-.135.203l-1.746 1.71-6.684 6.72a.616.616 0 01-.467.178H2.115a.615.615 0 01-.615-.615v-2.607a.615.615 0 01.178-.437l6.72-6.72 1.74-1.74A.614.614 0 0110.576 2a.615.615 0 01.437.178l2.607 2.607a.615.615 0 01.133.2zM2.73 13.066h1.74l6.105-6.104-1.74-1.74-6.105 6.105v1.74zm6.972-8.711l1.74 1.74.867-.873-1.734-1.734-.873.867zm.018 8.692a.625.625 0 100 1.25h4.155a.625.625 0 100-1.25H9.72z", fill: "currentColor" })));
+
+const EnM = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 24, height: 24, fill: "none", viewBox: "0 0 24 24" }, props),
+    React.createElement("path", { d: "M0 0h24v24H0z" }),
+    React.createElement("path", { d: "M22.203 4.131H1.797C.805 4.131 0 4.936 0 5.928v12.13c0 .992.805 1.797 1.797 1.797h20.406c.992 0 1.797-.805 1.797-1.797V5.928c0-.992-.805-1.797-1.797-1.797z", fill: "currentColor" }),
+    React.createElement("path", { d: "M23.975 5.63a1.798 1.798 0 00-1.772-1.5h-.468l-7.666 5.023V4.13H9.931v5.023L2.265 4.13h-.468c-.891 0-1.63.65-1.772 1.5l6.552 4.293H0v4.138h6.577L.025 18.354c.142.851.881 1.5 1.772 1.5h.468l7.666-5.022v5.022h4.138v-5.022l7.666 5.022h.468c.891 0 1.63-.649 1.772-1.5l-6.552-4.293H24V9.923h-6.577l6.552-4.293z", fill: "currentColor" }),
+    React.createElement("path", { d: "M13.241 4.131H10.76v6.62H0v2.483h10.759v6.621h2.482v-6.62H24v-2.483H13.241V4.13z", fill: "currentColor" }),
+    React.createElement("path", { d: "M1.162 19.738l8.746-5.677h-1.52L.432 19.225a1.8 1.8 0 00.73.513zM16.237 14.061h-1.52l8.47 5.499c.238-.156.436-.366.577-.613l-7.527-4.886zM.19 5.124l7.393 4.8h1.52L.725 4.483a1.805 1.805 0 00-.535.64zM15.589 9.923l7.97-5.174a1.8 1.8 0 00-.736-.509L14.07 9.923h1.52z", fill: "currentColor" })));
 
 const ExcelM = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 24, height: 24, fill: "none", viewBox: "0 0 24 24" }, props),
     React.createElement("path", { d: "M0 0h24v24H0z" }),
@@ -1089,6 +1100,10 @@ const RolledSheetS = (props) => (React.createElement("svg", Object.assign({ xmln
     React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M11.307 2.144v10.885c0 .44.146.845.392 1.172H3.287a1.955 1.955 0 01-1.954-1.953V2.144a.39.39 0 01.391-.39h9.193a.39.39 0 01.39.39zM3.25 10.38a.417.417 0 000 .833h1.833a.417.417 0 000-.833H3.25zm-.417-1.473c0-.23.187-.416.417-.416H9.64a.417.417 0 010 .833H3.25a.417.417 0 01-.417-.417zm.556-5.25a.556.556 0 00-.556.556V5.88c0 .307.25.555.556.555h2.222a.556.556 0 00.556-.555V4.213a.556.556 0 00-.556-.556H3.39z", fill: "currentColor" }),
     React.createElement("path", { d: "M12.089 4.461h2.187a.39.39 0 01.39.39v8.15a1.29 1.29 0 01-2.575.028c-.003 0-.003-.128-.003-3.27v-.005V4.46z", fill: "currentColor" })));
 
+const RuM = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 24, height: 24, fill: "none", viewBox: "0 0 24 24" }, props),
+    React.createElement("path", { d: "M0 0h24v25H0z" }),
+    React.createElement("path", { d: "M22.203 4.14H1.797C.805 4.14 0 4.945 0 5.937v3.444h24V5.937c0-.992-.805-1.797-1.797-1.797zM0 18.067c0 .992.805 1.797 1.797 1.797h20.406c.992 0 1.797-.805 1.797-1.797v-3.444H0v3.444zM24 9.381H0v5.241h24v-5.24z", fill: "currentColor" })));
+
 const ScooterM = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 24, height: 24, fill: "none", viewBox: "0 0 24 24" }, props),
     React.createElement("path", { d: "M0 0h24v24H0z" }),
     React.createElement("path", { d: "M18.53 15.588c-.018-.384-.045-.76-.072-1.188-.75.062-1.366.375-1.92.813-1.027.821-1.544 1.902-1.58 3.214-.009.375 0 .741 0 1.116 0 .393-.206.643-.59.643-1.857.01-3.714 0-5.58-.009-.027 0-.045-.026-.117-.062.456-1.107.5-2.233-.044-3.411.223-.01.375-.027.536-.027 1.5 0 3.009-.009 4.51.009.285 0 .437-.072.562-.357.759-1.67 2.053-2.697 3.848-3.072.277-.063.402-.143.393-.447-.009-2.232 0-4.464-.009-6.697 0-.625-.268-1-.75-1.116-.223-.054-.393-.054-.473.232-.116.375-.429.518-.804.518-.955 0-1.902.018-2.857-.009-.813-.018-1.357-.59-1.357-1.357 0-.768.544-1.34 1.357-1.366.955-.027 1.902-.01 2.857-.01.393 0 .679.162.84.545.044.108.223.215.357.233 1.214.143 2.018 1.018 2.018 2.259.009 2.205 0 4.402 0 6.608v.473c.518.17 1.018.321 1.5.482.17.054.33.143.482.232.304.188.447.438.277.795-.152.322-.464.402-.84.25-.446-.187-.892-.357-1.42-.571v1.277l.019-.01h-1.17c.009-.008.027.01.027.01zM2.001 18.427a2.938 2.938 0 012.974-2.92c1.571.018 2.884 1.34 2.893 2.92a2.933 2.933 0 01-2.956 2.938c-1.616-.018-2.92-1.33-2.911-2.938zm3.5 0c-.035-.348-.223-.553-.571-.553s-.554.205-.59.544c-.026.313.268.599.599.58.357-.017.536-.223.562-.57z", fill: "currentColor" }),
@@ -1396,6 +1411,7 @@ exports.CupM = CupM;
 exports.CupS = CupS;
 exports.DateRangeM = DateRangeM;
 exports.DateRangeS = DateRangeS;
+exports.DeM = DeM;
 exports.DialogueM = DialogueM;
 exports.DialogueS = DialogueS;
 exports.DiscountM = DiscountM;
@@ -1408,6 +1424,7 @@ exports.DotS = DotS;
 exports.DotsM = DotsM;
 exports.DotsS = DotsS;
 exports.EditS = EditS;
+exports.EnM = EnM;
 exports.ExcelM = ExcelM;
 exports.ExcelS = ExcelS;
 exports.ExclamationMarkM = ExclamationMarkM;
@@ -1563,6 +1580,7 @@ exports.RemoteControllerS = RemoteControllerS;
 exports.RepeatCircleM = RepeatCircleM;
 exports.RolledSheetM = RolledSheetM;
 exports.RolledSheetS = RolledSheetS;
+exports.RuM = RuM;
 exports.ScooterM = ScooterM;
 exports.ScooterS = ScooterS;
 exports.SearchM = SearchM;
