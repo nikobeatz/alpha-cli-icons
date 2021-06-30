@@ -9,9 +9,9 @@ export const ChevronForwardS = (props: React.SVGProps<SVGSVGElement>) => (
     viewBox="0 0 16 16"
     {...props}
   >
-    <path d="M0 0h16v16H0z" />
+    <path d="M0 0h17v16H0z" />
     <path
-      d="M9.381 8l-4.714 4.714L5.953 14l6-6-6-6-1.286 1.286L9.381 8z"
+      d="M9.274 8L4.56 12.714 5.845 14l6-6-6-6L4.56 3.286 9.274 8z"
       fill="currentColor"
     />
   </svg>

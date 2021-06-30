@@ -9,11 +9,11 @@ export const ControllerS = (props: React.SVGProps<SVGSVGElement>) => (
     viewBox="0 0 16 16"
     {...props}
   >
-    <path d="M0 0h16v16H0z" />
+    <path d="M0 0h17v17H0z" />
     <path
       fillRule="evenodd"
       clipRule="evenodd"
-      d="M13.206 4.296h-1.481V1.333h-1.482v2.963H8.762v1.482h4.444V4.296zM4.275 8.741H2.793V7.259h4.445v1.482H5.756v5.926H4.275V8.74zm0-7.408h1.482v4.445H4.276V1.333zm7.45 13.333h-1.48V7.26h1.48v7.407z"
+      d="M13.223 4.303H11.74V1.34H10.26v2.963H8.778v1.481h4.445V4.303zM4.292 8.747H2.81V7.266h4.445v1.481H5.773v5.926H4.292V8.747zm0-7.407h1.482v4.444H4.292V1.34zm7.45 13.333h-1.481V7.266h1.481v7.407z"
       fill="currentColor"
     />
   </svg>

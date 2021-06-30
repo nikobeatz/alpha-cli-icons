@@ -9,9 +9,9 @@ export const ArrowDirectionM = (props: React.SVGProps<SVGSVGElement>) => (
     viewBox="0 0 24 24"
     {...props}
   >
-    <path d="M0 0h24v24H0z" />
+    <path d="M0 0h25v25H0z" />
     <path
-      d="M2.001 22.023V6.683h3.54v9.083L19.307 2l2.694 2.694-13.79 13.79h10.311v3.54H2.001z"
+      d="M2.173 22.014V6.671h3.54v9.084L19.48 1.99l2.694 2.694-13.789 13.79h10.31v3.54H2.175z"
       fill="currentColor"
     />
   </svg>

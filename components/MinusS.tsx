@@ -9,11 +9,8 @@ export const MinusS = (props: React.SVGProps<SVGSVGElement>) => (
     viewBox="0 0 16 16"
     {...props}
   >
-    <path d="M0 0h16v16H0z" />
-    <path
-      d="M8.682 7.317H1.903v1.366h12.192V7.317H8.682z"
-      fill="currentColor"
-    />
+    <path d="M0 0h17v16H0z" />
+    <path d="M8.691 7.316H1.913v1.366h12.192V7.316H8.69z" fill="currentColor" />
   </svg>
 );
 export default MinusS;

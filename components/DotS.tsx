@@ -9,8 +9,8 @@ export const DotS = (props: React.SVGProps<SVGSVGElement>) => (
     viewBox="0 0 16 16"
     {...props}
   >
-    <path d="M0 0h16v16H0z" />
-    <path d="M11 8a3 3 0 11-6 0 3 3 0 016 0z" fill="currentColor" />
+    <path d="M0 0h17v16H0z" />
+    <path d="M11.01 8a3 3 0 11-6 0 3 3 0 016 0z" fill="currentColor" />
   </svg>
 );
 export default DotS;

@@ -9,11 +9,11 @@ export const NavigationS = (props: React.SVGProps<SVGSVGElement>) => (
     viewBox="0 0 16 16"
     {...props}
   >
-    <path d="M0 0h16v16H0z" />
+    <path d="M0 0h17v17H0z" />
     <path
       fillRule="evenodd"
       clipRule="evenodd"
-      d="M1.333 6.911l13.334-5.578L9.08 14.667h-.726L6.4 9.6 1.333 7.637v-.726zm7.43 4.688l3.14-7.504L4.4 7.228l2.54.986.608.237 1.215 3.148z"
+      d="M1.345 6.918L14.678 1.34 9.093 14.673h-.726L6.41 9.607 1.345 7.644v-.726zm7.43 4.687l3.14-7.503-7.503 3.133 2.54.985.608.237 1.215 3.148z"
       fill="currentColor"
     />
   </svg>

@@ -9,15 +9,15 @@ export const CreditCardS = (props: React.SVGProps<SVGSVGElement>) => (
     viewBox="0 0 16 16"
     {...props}
   >
-    <path d="M0 0h16v16H0z" />
+    <path d="M0 0h17v17H0z" />
     <path
-      d="M3.019 3h9.962c.93 0 1.686.814 1.686 1.815v1.317H1.333V4.815C1.333 3.815 2.09 3 3.02 3z"
+      d="M3.025 3.005h9.963c.93 0 1.685.814 1.685 1.815v1.317H1.34V4.82c0-1 .756-1.815 1.685-1.815z"
       fill="currentColor"
     />
     <path
       fillRule="evenodd"
       clipRule="evenodd"
-      d="M1.333 11.182V7.628h13.334v3.554c0 1-.756 1.815-1.686 1.815H3.02c-.93 0-1.686-.814-1.686-1.815zm2.083-.21h2.177V9.473H3.416v1.497z"
+      d="M1.34 11.186V7.633h13.333v3.553c0 1.002-.756 1.816-1.685 1.816H3.025c-.93 0-1.685-.814-1.685-1.816zm2.083-.21H5.6V9.479H3.423v1.497z"
       fill="currentColor"
     />
   </svg>
