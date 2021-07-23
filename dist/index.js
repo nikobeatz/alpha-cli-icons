@@ -213,6 +213,10 @@ const CertificateTypeS = (props) => (React.createElement("svg", Object.assign({ 
     React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M10.246 14.121l.681-2.731a2.212 2.212 0 01-.693-1.606c0-1.225.997-2.222 2.222-2.222s2.222.997 2.222 2.222c0 .632-.268 1.201-.693 1.606l.68 2.731a.446.446 0 01-.63.506l-1.58-.79-1.578.79a.449.449 0 01-.477-.05.447.447 0 01-.154-.456zm2.21-3.003c.735 0 1.333-.599 1.333-1.334 0-.735-.598-1.333-1.333-1.333s-1.333.598-1.333 1.333.598 1.334 1.333 1.334z", fill: "currentColor" }),
     React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M5.79 4.896c0 .49-.4.888-.89.888H1.346v7.112c0 .49.398.888.889.888h7.18l.539-2.159a3.068 3.068 0 01-.608-1.84 3.105 3.105 0 012.667-3.066v-4.49a.89.89 0 00-.89-.889H5.79v3.556zm4.444-.445c0 .245-.2.445-.445.445H7.123a.445.445 0 010-.89h2.666c.246 0 .445.2.445.445zM8.456 9.784c0 .246-.199.445-.444.445H3.567a.445.445 0 010-.889h4.445c.245 0 .444.2.444.444zm.445-2.222H3.567a.445.445 0 010-.889h5.334a.445.445 0 010 .89z", fill: "currentColor" })));
 
+const ChartBubbleM = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 24, height: 24, fill: "none", viewBox: "0 0 24 24" }, props),
+    React.createElement("path", { d: "M0 0h24v25H0z" }),
+    React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M16 3.006a5.51 5.51 0 00-5.5 5.5c0 3.03 2.47 5.5 5.5 5.5s5.5-2.47 5.5-5.5-2.47-5.5-5.5-5.5zm-13.5 11c0-2.21 1.79-4 4-4s4 1.79 4 4-1.79 4-4 4-4-1.79-4-4zm2 0c0 1.1.9 2 2 2s2-.9 2-2-.9-2-2-2-2 .9-2 2zm10.01 1c-1.65 0-3 1.35-3 3s1.35 3 3 3 3-1.35 3-3-1.35-3-3-3zm-1 3c0 .55.45 1 1 1s1-.45 1-1-.45-1-1-1-1 .45-1 1zm-1.01-9.5c0 1.93 1.57 3.5 3.5 3.5s3.5-1.57 3.5-3.5-1.57-3.5-3.5-3.5-3.5 1.57-3.5 3.5z", fill: "currentColor" })));
+
 const ChartM = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 24, height: 24, fill: "none", viewBox: "0 0 24 24" }, props),
     React.createElement("path", { d: "M0 0h25v24H0z" }),
     React.createElement("path", { d: "M2.42 13.36c0-.46.373-.834.833-.834h.463c.46 0 .833.373.833.834v7.807c0 .46-.373.833-.833.833h-.463a.833.833 0 01-.833-.833V13.36zm17.037-4.21c0-.461.373-.834.833-.834h.463c.46 0 .833.373.833.833v12.018c0 .46-.373.833-.833.833h-.463a.833.833 0 01-.833-.833V9.149zm-8.519-6.317c0-.46.373-.833.833-.833h.463c.46 0 .834.373.834.833v18.334c0 .46-.373.833-.833.833h-.463a.833.833 0 01-.834-.833V2.833z", fill: "currentColor" })));
@@ -344,7 +348,7 @@ const CloseMarkS = (props) => (React.createElement("svg", Object.assign({ xmlns:
 
 const CloseS = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 16, height: 16, fill: "none", viewBox: "0 0 16 16" }, props),
     React.createElement("path", { d: "M0 0h17v17H0z" }),
-    React.createElement("path", { d: "M2.688 2.335L1.345 3.678l5.324 5.324-5.324 5.323 1.343 1.343 5.323-5.323 5.324 5.323 1.343-1.342-5.324-5.324 5.324-5.324-1.343-1.343-5.324 5.324-5.323-5.324z", fill: "currentColor" })));
+    React.createElement("path", { d: "M4.336 3.413l-.926.926 3.67 3.67-3.67 3.671.926.926 3.67-3.67 3.67 3.67.926-.926-3.67-3.67 3.67-3.67-.925-.927-3.67 3.67-3.671-3.67z", fill: "currentColor" })));
 
 const CloseSmallM = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 24, height: 24, fill: "none", viewBox: "0 0 24 24" }, props),
     React.createElement("path", { d: "M0 0h25v24H0z" }),
@@ -843,6 +847,11 @@ const LockM = (props) => (React.createElement("svg", Object.assign({ xmlns: "htt
     React.createElement("path", { d: "M0 0h24v25H0z" }),
     React.createElement("path", { d: "M17.625 9.505H17v-2.5c0-2.758-2.242-5-5-5s-5 2.242-5 5v2.5h-.625A1.877 1.877 0 004.5 11.38v8.75c0 1.034.841 1.875 1.875 1.875h11.25A1.877 1.877 0 0019.5 20.13v-8.75a1.877 1.877 0 00-1.875-1.875zm-8.959-2.5A3.338 3.338 0 0112 3.671a3.338 3.338 0 013.334 3.334v2.5H8.666v-2.5zm4.168 8.935v1.899a.834.834 0 11-1.668 0V15.94a1.66 1.66 0 01-.834-1.435c0-.919.748-1.666 1.667-1.666.918 0 1.666.747 1.666 1.666a1.658 1.658 0 01-.831 1.435z", fill: "currentColor" })));
 
+const LockOutlineM = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 24, height: 24, fill: "none", viewBox: "0 0 24 24" }, props),
+    React.createElement("path", { d: "M0 0h24v25H0z" }),
+    React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M17 9.506h.625c1.034 0 1.875.841 1.875 1.875v8.75a1.877 1.877 0 01-1.875 1.875H6.375A1.877 1.877 0 014.5 20.13v-8.75c0-1.034.841-1.875 1.875-1.875H7v-2.5c0-2.758 2.242-5 5-5s5 2.242 5 5v2.5zm-5-5.834a3.338 3.338 0 00-3.334 3.334v2.5h6.668v-2.5A3.338 3.338 0 0012 3.672zm-5 7.334a1 1 0 00-1 1v7.6a1 1 0 001 1h10a1 1 0 001-1v-7.6a1 1 0 00-1-1H7z", fill: "currentColor" }),
+    React.createElement("path", { d: "M12.831 15.94v1.9a.833.833 0 11-1.667 0v-1.9a1.66 1.66 0 01-.834-1.434c0-.919.748-1.667 1.666-1.667.92 0 1.667.748 1.667 1.667a1.659 1.659 0 01-.832 1.435z", fill: "currentColor" })));
+
 const LockS = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 16, height: 16, fill: "none", viewBox: "0 0 16 16" }, props),
     React.createElement("path", { d: "M0 0h17v17H0z" }),
     React.createElement("path", { d: "M11.755 6.34h-.417V4.673A3.337 3.337 0 008.005 1.34a3.337 3.337 0 00-3.333 3.333V6.34h-.417c-.69 0-1.25.56-1.25 1.25v5.833c0 .69.56 1.25 1.25 1.25h7.5c.689 0 1.25-.56 1.25-1.25V7.59c0-.69-.561-1.25-1.25-1.25zM5.782 4.673c0-1.225.997-2.222 2.223-2.222s2.222.997 2.222 2.222V6.34H5.782V4.673zm2.779 5.957v1.266a.556.556 0 11-1.112 0V10.63a1.106 1.106 0 01.555-2.067c.613 0 1.11.498 1.11 1.11.002.41-.223.764-.553.957z", fill: "currentColor" })));
@@ -929,6 +938,13 @@ const MessageOutlineM = (props) => (React.createElement("svg", Object.assign({ x
     React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M2.25 12.005c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75H3a.75.75 0 01-.624-1.166l.225-.338c.313-.47.534-.801.694-1.066.16-.264.234-.421.271-.538a2.24 2.24 0 00.104-.407c.01-.09.013-.197-.001-.42-.007-.107-.052-.318-.187-.74-.13-.408-.322-.95-.587-1.694-.354-.995-.645-2.175-.645-3.381zM12 3.755a8.25 8.25 0 00-8.25 8.25c0 .976.238 1.979.558 2.878l.005.014c.259.728.46 1.292.598 1.726.135.422.235.791.255 1.104.015.25.02.467-.008.697-.028.23-.087.44-.163.679-.09.284-.235.56-.416.859-.056.091-.117.189-.184.293H12a8.25 8.25 0 100-16.5z", fill: "currentColor" }),
     React.createElement("path", { d: "M7.25 10.005a.75.75 0 01.75-.75h8a.75.75 0 010 1.5H8a.75.75 0 01-.75-.75zM8 13.255a.75.75 0 000 1.5h4a.75.75 0 000-1.5H8z", stroke: "currentColor", strokeWidth: 0.2, strokeLinecap: "round", strokeLinejoin: "round" }),
     React.createElement("path", { clipRule: "evenodd", d: "M2.25 12.005c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75H3a.75.75 0 01-.624-1.166l.225-.338c.313-.47.534-.801.694-1.066.16-.264.234-.421.271-.538a2.24 2.24 0 00.104-.407c.01-.09.013-.197-.001-.42-.007-.107-.052-.318-.187-.74-.13-.408-.322-.95-.587-1.694-.354-.995-.645-2.175-.645-3.381zM12 3.755a8.25 8.25 0 00-8.25 8.25c0 .976.238 1.979.558 2.878l.005.014c.259.728.46 1.292.598 1.726.135.422.235.791.255 1.104.015.25.02.467-.008.697-.028.23-.087.44-.163.679-.09.284-.235.56-.416.859-.056.091-.117.189-.184.293H12a8.25 8.25 0 100-16.5z", stroke: "currentColor", strokeWidth: 0.2, strokeLinecap: "round", strokeLinejoin: "round" })));
+
+const MessageOutlineS = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 16, height: 16, fill: "none", viewBox: "0 0 16 16" }, props),
+    React.createElement("path", { d: "M0 0h16v17H0z" }),
+    React.createElement("path", { d: "M4.833 6.672a.5.5 0 01.5-.5h5.334a.5.5 0 010 1H5.333a.5.5 0 01-.5-.5zM5.333 8.84a.5.5 0 000 1H8a.5.5 0 000-1H5.333z", fill: "currentColor" }),
+    React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M1.5 8.006a6.5 6.5 0 116.5 6.5H2a.5.5 0 01-.416-.778l.15-.225c.209-.313.356-.534.463-.71.106-.177.156-.281.18-.36.046-.141.062-.21.07-.27.007-.06.008-.132-.001-.28-.005-.072-.035-.212-.125-.494a41.4 41.4 0 00-.391-1.13c-.236-.662-.43-1.45-.43-2.253zm6.5-5.5a5.5 5.5 0 00-5.5 5.5c0 .65.159 1.32.372 1.919l.003.009c.173.485.307.861.4 1.15.089.282.156.528.169.736.01.166.014.312-.005.465a2.443 2.443 0 01-.109.453 2.72 2.72 0 01-.278.572 8.843 8.843 0 01-.122.196H8a5.5 5.5 0 100-11z", fill: "currentColor" }),
+    React.createElement("path", { d: "M4.833 6.672a.5.5 0 01.5-.5h5.334a.5.5 0 010 1H5.333a.5.5 0 01-.5-.5zM5.333 8.84a.5.5 0 000 1H8a.5.5 0 000-1H5.333z", stroke: "currentColor", strokeWidth: 0.2, strokeLinecap: "round", strokeLinejoin: "round" }),
+    React.createElement("path", { clipRule: "evenodd", d: "M1.5 8.006a6.5 6.5 0 116.5 6.5H2a.5.5 0 01-.416-.778l.15-.225c.209-.313.356-.534.463-.71.106-.177.156-.281.18-.36.046-.141.062-.21.07-.27.007-.06.008-.132-.001-.28-.005-.072-.035-.212-.125-.494a41.4 41.4 0 00-.391-1.13c-.236-.662-.43-1.45-.43-2.253zm6.5-5.5a5.5 5.5 0 00-5.5 5.5c0 .65.159 1.32.372 1.919l.003.009c.173.485.307.861.4 1.15.089.282.156.528.169.736.01.166.014.312-.005.465a2.443 2.443 0 01-.109.453 2.72 2.72 0 01-.278.572 8.843 8.843 0 01-.122.196H8a5.5 5.5 0 100-11z", stroke: "currentColor", strokeWidth: 0.2, strokeLinecap: "round", strokeLinejoin: "round" })));
 
 const MessageS = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 16, height: 16, fill: "none", viewBox: "0 0 16 16" }, props),
     React.createElement("path", { d: "M0 0h17v17H0z" }),
@@ -1320,6 +1336,10 @@ const SecurePaymentS = (props) => (React.createElement("svg", Object.assign({ xm
     React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M9.821 6.15h2.204c.527 0 .955.429.955.955v.538a.956.956 0 01-.955.955H9.821a.956.956 0 01-.955-.955v-.538c0-.526.428-.955.955-.955zm2.204 1.667a.174.174 0 00.174-.174v-.538a.174.174 0 00-.174-.174H9.821a.174.174 0 00-.174.174v.538c0 .096.078.174.174.174h2.204z", fill: "currentColor" }),
     React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M12.92 2.4H3.093c-.966 0-1.752.786-1.752 1.753v5.609c0 .946.754 1.72 1.693 1.751v1.404c0 .375.305.68.68.68h3.17a.682.682 0 00.68-.68v-1.402h5.358c.966 0 1.752-.787 1.752-1.753v-5.61c0-.966-.786-1.752-1.752-1.752zm-9.828.781h9.829c.535 0 .97.436.97.972v.33H2.122v-.33c0-.536.436-.972.971-.972zm3.066 6.51h-1.72V9.25c0-.359.293-.651.652-.651h.417c.358 0 .65.292.65.651v.443zm.625 3.126h-2.97v-2.344h2.97v2.344zm6.138-2.084H7.564v-.36a.682.682 0 00-.625-.679V9.25c0-.79-.643-1.432-1.432-1.432H5.09c-.79 0-1.432.642-1.432 1.432v.445a.682.682 0 00-.625.679v.358a.972.972 0 01-.912-.969V5.265h11.77v4.497a.972.972 0 01-.97.971z", fill: "currentColor" })));
 
+const SendM = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 24, height: 24, fill: "none", viewBox: "0 0 24 24" }, props),
+    React.createElement("path", { d: "M0 0h24v25H0z" }),
+    React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M22.068 13.115c1.02-.387 1.02-1.831 0-2.219L4 3.042v5.293a2 2 0 001.252 1.855l4.498 1.816-4.499 1.816a2 2 0 00-1.25 1.854L4 20.97l18.068-7.854z", fill: "currentColor" })));
+
 const ShareM = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 24, height: 24, fill: "none", viewBox: "0 0 24 24" }, props),
     React.createElement("path", { d: "M0 0h25v24H0z" }),
     React.createElement("path", { d: "M8.359 5.42a.934.934 0 00-.104 1.196.682.682 0 001.049.09l2.168-2.077v8.768a.735.735 0 001.471 0v-8.81l2.213 2.12a.682.682 0 001.049-.092.934.934 0 00-.104-1.195l-3.357-3.216a.702.702 0 00-.517-.203.703.703 0 00-.511.204L8.359 5.42z", fill: "currentColor" }),
@@ -1533,6 +1553,10 @@ const YoutubeS = (props) => (React.createElement("svg", Object.assign({ xmlns: "
     React.createElement("path", { d: "M0 0h17v17H0z" }),
     React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M3.727 3.336A2.58 2.58 0 001.345 5.91v4.196a2.58 2.58 0 002.382 2.572l1.19.092h6.19l1.189-.092a2.58 2.58 0 002.382-2.572V5.909a2.58 2.58 0 00-2.383-2.573l-1.188-.091h-6.19l-1.19.091zM10.3 7.753L6.624 9.702V5.843l3.675 1.91z", fill: "currentColor" })));
 
+const ZapCircleM = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 24, height: 24, fill: "none", viewBox: "0 0 24 24" }, props),
+    React.createElement("path", { d: "M0 0h24v25H0z" }),
+    React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M22 12.003c0 5.523-4.477 10-10 10s-10-4.477-10-10c0-5.522 4.477-10 10-10s10 4.478 10 10zm-7.965-4.876zm0 0a.013.013 0 00-.008.003l-5.773 5.301a.185.185 0 00-.056.096.178.178 0 00.01.11.19.19 0 00.074.084c.033.021.072.032.111.032h2.614c.097 0 .194.023.28.066.086.043.16.106.214.183a.543.543 0 01.057.526l-1.361 3.142 5.549-5.096a.185.185 0 00.056-.096.177.177 0 00-.011-.109.19.19 0 00-.073-.085.207.207 0 00-.111-.031h-2.614a.623.623 0 01-.285-.069.583.583 0 01-.216-.19.542.542 0 01-.041-.536l1.595-3.314.003-.005a.016.016 0 00-.003-.007.014.014 0 00-.005-.004h-.006zm-.095-1.12c-.28.02-.543.133-.745.318v-.001l-5.771 5.3c-.895.822-.278 2.254.97 2.254h1.725L8.89 16.711a.89.89 0 00.095.878c.09.127.213.232.357.304.144.073.304.11.467.11h.24c.259 0 .507-.095.693-.265l5.833-5.357c.895-.822.278-2.254-.97-2.254H13.92l1.213-2.517c.116-.242.139-.513.065-.769a1.14 1.14 0 00-.47-.63 1.259 1.259 0 00-.787-.204z", fill: "currentColor" })));
+
 exports.AddMarkM = AddMarkM;
 exports.AddMarkS = AddMarkS;
 exports.AirConditioningM = AirConditioningM;
@@ -1578,6 +1602,7 @@ exports.CashboxS = CashboxS;
 exports.CertificateM = CertificateM;
 exports.CertificateTypeM = CertificateTypeM;
 exports.CertificateTypeS = CertificateTypeS;
+exports.ChartBubbleM = ChartBubbleM;
 exports.ChartM = ChartM;
 exports.ChartS = ChartS;
 exports.ChecMarkM = ChecMarkM;
@@ -1722,6 +1747,7 @@ exports.ListTreeM = ListTreeM;
 exports.LocationM = LocationM;
 exports.LocationS = LocationS;
 exports.LockM = LockM;
+exports.LockOutlineM = LockOutlineM;
 exports.LockS = LockS;
 exports.LogInM = LogInM;
 exports.LogInS = LogInS;
@@ -1742,6 +1768,7 @@ exports.MessageM = MessageM;
 exports.MessageMarkM = MessageMarkM;
 exports.MessageMarkS = MessageMarkS;
 exports.MessageOutlineM = MessageOutlineM;
+exports.MessageOutlineS = MessageOutlineS;
 exports.MessageS = MessageS;
 exports.MinusM = MinusM;
 exports.MinusS = MinusS;
@@ -1829,6 +1856,7 @@ exports.SearchM = SearchM;
 exports.SearchS = SearchS;
 exports.SecurePaymentM = SecurePaymentM;
 exports.SecurePaymentS = SecurePaymentS;
+exports.SendM = SendM;
 exports.ShareM = ShareM;
 exports.ShareS = ShareS;
 exports.ShoppingBagM = ShoppingBagM;
@@ -1876,3 +1904,4 @@ exports.WifiM = WifiM;
 exports.WifiS = WifiS;
 exports.YoutubeM = YoutubeM;
 exports.YoutubeS = YoutubeS;
+exports.ZapCircleM = ZapCircleM;
