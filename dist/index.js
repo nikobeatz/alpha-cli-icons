@@ -214,8 +214,8 @@ const CertificateTypeS = (props) => (React.createElement("svg", Object.assign({ 
     React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M5.79 4.896c0 .49-.4.888-.89.888H1.346v7.112c0 .49.398.888.889.888h7.18l.539-2.159a3.068 3.068 0 01-.608-1.84 3.105 3.105 0 012.667-3.066v-4.49a.89.89 0 00-.89-.889H5.79v3.556zm4.444-.445c0 .245-.2.445-.445.445H7.123a.445.445 0 010-.89h2.666c.246 0 .445.2.445.445zM8.456 9.784c0 .246-.199.445-.444.445H3.567a.445.445 0 010-.889h4.445c.245 0 .444.2.444.444zm.445-2.222H3.567a.445.445 0 010-.889h5.334a.445.445 0 010 .89z", fill: "currentColor" })));
 
 const ChartBubbleM = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 24, height: 24, fill: "none", viewBox: "0 0 24 24" }, props),
-    React.createElement("path", { d: "M0 0h24v25H0z" }),
-    React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M16 3.006a5.51 5.51 0 00-5.5 5.5c0 3.03 2.47 5.5 5.5 5.5s5.5-2.47 5.5-5.5-2.47-5.5-5.5-5.5zm-13.5 11c0-2.21 1.79-4 4-4s4 1.79 4 4-1.79 4-4 4-4-1.79-4-4zm2 0c0 1.1.9 2 2 2s2-.9 2-2-.9-2-2-2-2 .9-2 2zm10.01 1c-1.65 0-3 1.35-3 3s1.35 3 3 3 3-1.35 3-3-1.35-3-3-3zm-1 3c0 .55.45 1 1 1s1-.45 1-1-.45-1-1-1-1 .45-1 1zm-1.01-9.5c0 1.93 1.57 3.5 3.5 3.5s3.5-1.57 3.5-3.5-1.57-3.5-3.5-3.5-3.5 1.57-3.5 3.5z", fill: "currentColor" })));
+    React.createElement("path", { d: "M0 0h24v24H0z" }),
+    React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M16 3a5.51 5.51 0 00-5.5 5.5c0 3.03 2.47 5.5 5.5 5.5s5.5-2.47 5.5-5.5S19.03 3 16 3zM2.5 14c0-2.21 1.79-4 4-4s4 1.79 4 4-1.79 4-4 4-4-1.79-4-4zm2 0c0 1.1.9 2 2 2s2-.9 2-2-.9-2-2-2-2 .9-2 2zm10.01 1c-1.65 0-3 1.35-3 3s1.35 3 3 3 3-1.35 3-3-1.35-3-3-3zm-1 3c0 .55.45 1 1 1s1-.45 1-1-.45-1-1-1-1 .45-1 1zM12.5 8.5c0 1.93 1.57 3.5 3.5 3.5s3.5-1.57 3.5-3.5S17.93 5 16 5s-3.5 1.57-3.5 3.5z", fill: "currentColor" })));
 
 const ChartM = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 24, height: 24, fill: "none", viewBox: "0 0 24 24" }, props),
     React.createElement("path", { d: "M0 0h25v24H0z" }),
