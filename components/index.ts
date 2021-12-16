@@ -314,6 +314,7 @@ export * from './SpaceShipM';
 export * from './SpaceShipS';
 export * from './StackedChartM';
 export * from './StarM';
+export * from './StarOutlineM';
 export * from './StarS';
 export * from './StopwatchM';
 export * from './StopwatchS';
