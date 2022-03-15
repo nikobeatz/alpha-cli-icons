@@ -97,6 +97,10 @@ const BellS = (props) => (React.createElement("svg", Object.assign({ xmlns: "htt
     React.createElement("path", { d: "M8.006 14.673a2.276 2.276 0 002.227-1.818H5.779a2.277 2.277 0 002.227 1.818zM12.256 7.4h-.008a4.247 4.247 0 01-4.242-4.242c0-.643.148-1.25.406-1.797a4.242 4.242 0 00-4.648 4.222v1.69c0 1.199-.526 2.33-1.448 3.11a1.06 1.06 0 00-.333 1.089c.129.474.598.777 1.09.777h9.863c.517 0 1.004-.334 1.108-.84a1.063 1.063 0 00-.362-1.038 4.033 4.033 0 01-1.426-2.97z", fill: "currentColor" }),
     React.createElement("path", { d: "M8.006 14.673a2.277 2.277 0 01-2.227-1.818h4.454a2.276 2.276 0 01-2.227 1.818zM3.756 7.4h.007a4.248 4.248 0 004.243-4.242c0-.643-.148-1.25-.406-1.797a4.242 4.242 0 014.648 4.222v1.69c0 1.199.526 2.33 1.447 3.11.308.263.444.68.334 1.089-.129.474-.598.777-1.09.777H3.075c-.516 0-1.003-.334-1.107-.84a1.062 1.062 0 01.361-1.038A4.033 4.033 0 003.756 7.4z", fill: "currentColor" })));
 
+const BigChevronM = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 24, height: 24, fill: "none", viewBox: "0 0 24 24" }, props),
+    React.createElement("path", { d: "M0 0h24v24H0z" }),
+    React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M10.753 12l6.967-8.694L15.096 1 6.289 11.991l-.009.008.001.001v.002l.007.007L15.096 23l2.624-2.306L10.753 12z", fill: "currentColor" })));
+
 const BookM = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 24, height: 24, fill: "none", viewBox: "0 0 24 24" }, props),
     React.createElement("path", { d: "M0 0h24v25H0z" }),
     React.createElement("path", { d: "M19.654 5.053v10.772a.72.72 0 01-.716.718c-1.666.004-4.457.353-6.383 2.375V7.645a.69.69 0 01.099-.364c1.58-2.554 4.617-2.942 6.286-2.946h.002a.717.717 0 01.712.718zM5.058 4.335h.002c1.67.004 4.706.392 6.286 2.947a.69.69 0 01.098.363v11.273c-1.925-2.022-4.716-2.37-6.382-2.374a.72.72 0 01-.716-.719V5.054a.717.717 0 01.712-.719z", fill: "currentColor" }),
@@ -1533,6 +1537,10 @@ const WalletS = (props) => (React.createElement("svg", Object.assign({ xmlns: "h
     React.createElement("path", { d: "M11.687 3.65h-6.98l3.857-1.785a2.087 2.087 0 012.785 1.037l.338.748zM3.781 4.718A2.111 2.111 0 001.67 6.83v5.396c0 1.166.945 2.111 2.111 2.111h7.389a2.111 2.111 0 002.111-2.11v-.08a2.639 2.639 0 01-3.167-2.586v-.065a2.639 2.639 0 013.167-2.587V6.83a2.111 2.111 0 00-2.111-2.11H3.78z", fill: "currentColor" }),
     React.createElement("path", { d: "M12.753 7.924c-.874 0-1.583.71-1.583 1.584v.04a1.583 1.583 0 003.167 0v-.04c0-.875-.71-1.584-1.584-1.584z", fill: "currentColor" })));
 
+const WardrobeM = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 24, height: 24, fill: "none", viewBox: "0 0 24 24" }, props),
+    React.createElement("path", { d: "M0 0h24v24H0z" }),
+    React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M15.404 6.364h-.008a2.704 2.704 0 01-1.741 2.907l-8.037 2.967v8.85a2 2 0 002 2h8.764a2 2 0 002-2V8.363c0-.476-.166-.914-.444-1.257v-.258a5.937 5.937 0 00-11.874 0v1.837l2.5-.93v-.907a3.437 3.437 0 016.84-.485z", fill: "currentColor" })));
+
 const WeblistOutlineM = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 24, height: 24, fill: "none", viewBox: "0 0 24 24" }, props),
     React.createElement("path", { d: "M0 0h24v24H0z" }),
     React.createElement("path", { d: "M2 3.823a1.818 1.818 0 113.636 0 1.818 1.818 0 01-3.636 0zM22 10.184H9.275v3.636H22v-3.636zM2 12.002a1.818 1.818 0 113.636 0 1.818 1.818 0 01-3.636 0zM22 18.363H9.275V22H22v-3.636zM3.818 18.364a1.818 1.818 0 100 3.636 1.818 1.818 0 000-3.636zM22 2.005H9.275V5.64H22V2.005z", fill: "currentColor" })));
@@ -1581,6 +1589,7 @@ exports.BellOutlineM = BellOutlineM;
 exports.BellPimpM = BellPimpM;
 exports.BellPimpS = BellPimpS;
 exports.BellS = BellS;
+exports.BigChevronM = BigChevronM;
 exports.BookM = BookM;
 exports.BookS = BookS;
 exports.BoxHandsM = BoxHandsM;
@@ -1903,6 +1912,7 @@ exports.WalletFinanceM = WalletFinanceM;
 exports.WalletFinanceS = WalletFinanceS;
 exports.WalletM = WalletM;
 exports.WalletS = WalletS;
+exports.WardrobeM = WardrobeM;
 exports.WeblistOutlineM = WeblistOutlineM;
 exports.WeblistOutlineS = WeblistOutlineS;
 exports.WifiM = WifiM;
