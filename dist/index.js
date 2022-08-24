@@ -55,6 +55,7 @@ const ArrowDirectionS = (props) => (React.createElement("svg", Object.assign({ x
     React.createElement("path", { d: "M1.345 14.674V4.447h2.36v6.055l9.177-9.177 1.796 1.796-9.193 9.193h6.874v2.36H1.345z", fill: "currentColor" })));
 
 const AusM = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 24, height: 24, fill: "none", viewBox: "0 0 24 24" }, props),
+    React.createElement("path", { d: "M0 0h25v24H0z" }),
     React.createElement("path", { d: "M22.2026 4.14001H1.79742C0.804703 4.14001 0 4.94472 0 5.93744V9.38139H24V5.93744C24 4.94472 23.1953 4.14001 22.2026 4.14001Z", fill: "#D42020" }),
     React.createElement("path", { d: "M0 18.0667C0 19.0594 0.804703 19.8641 1.79742 19.8641H22.2026C23.1952 19.8641 24 19.0594 24 18.0667V14.6227H0V18.0667Z", fill: "#D42020" }),
     React.createElement("path", { d: "M24 9.38129H0V14.6224H24V9.38129Z", fill: "#F5F5F5" })));
@@ -462,8 +463,10 @@ const DateRangeS = (props) => (React.createElement("svg", Object.assign({ xmlns:
     React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M4.939 1.34a.513.513 0 00-.513.513V2.885a2.222 2.222 0 00-2.051 2.216v7.35c0 1.227.995 2.222 2.222 2.222h6.838a2.222 2.222 0 002.222-2.222v-7.35c0-1.17-.904-2.128-2.051-2.216V1.853a.513.513 0 00-1.026 0v1.025H8.53V1.854a.513.513 0 00-1.026 0v1.025H5.452V1.854a.513.513 0 00-.513-.513zm3.547 5a.556.556 0 110 1.111H5.153a.556.556 0 010-1.111h3.333zm3.333 3.333a.556.556 0 00-.555-.555H5.153a.556.556 0 000 1.11h6.11a.556.556 0 00.556-.555z", fill: "currentColor" })));
 
 const DeM = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 24, height: 24, fill: "none", viewBox: "0 0 24 24" }, props),
-    React.createElement("path", { d: "M0 0h24v25H0z" }),
-    React.createElement("path", { d: "M22.203 4.14H1.797C.805 4.14 0 4.945 0 5.937v3.444h24V5.937c0-.992-.805-1.797-1.797-1.797zM0 18.067c0 .992.805 1.797 1.797 1.797h20.406c.992 0 1.797-.805 1.797-1.797v-3.444H0v3.444zM24 9.381H0v5.241h24v-5.24z", fill: "currentColor" })));
+    React.createElement("path", { d: "M0 0h25v24H0z" }),
+    React.createElement("path", { d: "M22.2026 4.14001H1.79742C0.804703 4.14001 0 4.94472 0 5.93744V9.38139H24V5.93744C24 4.94472 23.1953 4.14001 22.2026 4.14001Z", fill: "#0D0D0D" }),
+    React.createElement("path", { d: "M0 18.0667C0 19.0594 0.804703 19.8641 1.79742 19.8641H22.2026C23.1952 19.8641 24 19.0594 24 18.0667V14.6227H0V18.0667Z", fill: "#FAB123" }),
+    React.createElement("path", { d: "M24 9.38129H0V14.6224H24V9.38129Z", fill: "#D52020" })));
 
 const DialogueM = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 24, height: 24, fill: "none", viewBox: "0 0 24 24" }, props),
     React.createElement("path", { d: "M0 0h24v25H0z" }),
@@ -1271,6 +1274,7 @@ const PlusS = (props) => (React.createElement("svg", Object.assign({ xmlns: "htt
     React.createElement("path", { d: "M8.664 2.155H7.355v5.19h-5.19v1.31h5.19v5.19h1.31v-5.19h5.19v-1.31h-5.19v-5.19z", fill: "currentColor" })));
 
 const PolandM = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 24, height: 24, fill: "none", viewBox: "0 0 24 24" }, props),
+    React.createElement("path", { d: "M0 0h25v24H0z" }),
     React.createElement("path", { d: "M0 18.0667C0 19.0594 0.804703 19.8641 1.79742 19.8641H22.2026C23.1952 19.8641 24 19.0594 24 18.0667V12.0021H0V18.0667Z", fill: "#D42020" }),
     React.createElement("path", { d: "M22.2026 4.14001H1.79742C0.804703 4.14001 0 4.94472 0 5.93744V12.0021H24V5.93744C24 4.94472 23.1953 4.14001 22.2026 4.14001Z", fill: "#F5F5F5" })));
 
@@ -1355,7 +1359,7 @@ const RolledSheetS = (props) => (React.createElement("svg", Object.assign({ xmln
     React.createElement("path", { d: "M12.095 4.468h2.187a.39.39 0 01.391.39v5.018l-.001 3.131a1.29 1.29 0 01-2.575.029c-.002 0-.002-.129-.002-3.27V9.76 4.468z", fill: "currentColor" })));
 
 const RuM = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 24, height: 24, fill: "none", viewBox: "0 0 24 24" }, props),
-    React.createElement("path", { d: "M0 0h24v25H0z" }),
+    React.createElement("path", { d: "M0 0h25v24H0z" }),
     React.createElement("path", { d: "M22.203 4.14H1.797C.805 4.14 0 4.945 0 5.937v3.444h24V5.937c0-.992-.805-1.797-1.797-1.797zM0 18.067c0 .992.805 1.797 1.797 1.797h20.406c.992 0 1.797-.805 1.797-1.797v-3.444H0v3.444zM24 9.381H0v5.241h24v-5.24z", fill: "currentColor" })));
 
 const ScooterM = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 24, height: 24, fill: "none", viewBox: "0 0 24 24" }, props),
