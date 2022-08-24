@@ -20,7 +20,7 @@ jobs:
             BRANCH_NAME: main
       - name: install all packages
         run: |
-          npm i
+          npm i --force
           npm run generate
       - name: run build bundle
         run: npm run build
