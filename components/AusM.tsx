@@ -9,6 +9,7 @@ export const AusM = (props: React.SVGProps<SVGSVGElement>) => (
     viewBox="0 0 24 24"
     {...props}
   >
+    <path d="M0 0h25v24H0z" />
     <path
       d="M22.2026 4.14001H1.79742C0.804703 4.14001 0 4.94472 0 5.93744V9.38139H24V5.93744C24 4.94472 23.1953 4.14001 22.2026 4.14001Z"
       fill="#D42020"

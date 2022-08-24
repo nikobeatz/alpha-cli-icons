@@ -9,6 +9,7 @@ export const PolandM = (props: React.SVGProps<SVGSVGElement>) => (
     viewBox="0 0 24 24"
     {...props}
   >
+    <path d="M0 0h25v24H0z" />
     <path
       d="M0 18.0667C0 19.0594 0.804703 19.8641 1.79742 19.8641H22.2026C23.1952 19.8641 24 19.0594 24 18.0667V12.0021H0V18.0667Z"
       fill="#D42020"
