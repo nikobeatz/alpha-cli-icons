@@ -19,6 +19,7 @@ template.smart({ plugins: ['typescript'] }).ast`
 
 const icons = glob.sync(`${ICONS_SOURCE_DIR}/**.svg`);
 
+
 const iconsNames = () => {
   const arr = icons.map(i => {
     const iconName = i.split("/")
@@ -26,24 +27,6 @@ const iconsNames = () => {
   })
   return arr
 }
-
-async function createIndexImportFile() {
-  const fileContent = iconsNames().reduce((acc, componentName) => {
-      acc += `export * from './${componentName}';\n`;
-
-      return acc;
-  }, '');
-
-   try {
-      fs.writeFile(path.join('components', 'index.ts'), fileContent, (err) => {
-        console.log(err)
-      });
-   } catch (error) {
-      console.log(error)
-   }
-}
-
-createIndexImportFile()
 
 for (const icon of icons) {
   const svg = fs.readFileSync(icon, 'utf8');
@@ -79,3 +62,31 @@ for (const icon of icons) {
         console.log('data',data);
     });
 }
+
+const components = glob.sync(`${COMPONENTS_DIR}/**.tsx`);
+
+const componentsNames = () => {
+  const arr = components.map(i => {
+    const componentName = i.split("/")
+    return componentName[1].split(".")[0]
+  })
+  return arr
+}
+
+async function createIndexImportFile() {
+  const fileContent = componentsNames().reduce((acc, componentName) => {
+      acc += `export * from './${componentName}';\n`;
+
+      return acc;
+  }, '');
+
+   try {
+      fs.writeFile(path.join('components', 'index.ts'), fileContent, (err) => {
+        console.log(err)
+      });
+   } catch (error) {
+      console.log(error)
+   }
+}
+
+createIndexImportFile()
