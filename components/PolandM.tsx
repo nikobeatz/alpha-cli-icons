@@ -19,4 +19,4 @@ export const PolandM = (props: React.SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default RuM;
+export default PolandM;

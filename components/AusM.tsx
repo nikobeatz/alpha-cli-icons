@@ -20,4 +20,4 @@ export const AusM = (props: React.SVGProps<SVGSVGElement>) => (
     <path d="M24 9.38129H0V14.6224H24V9.38129Z" fill="#F5F5F5" />
   </svg>
 );
-export default RuM;
+export default AusM;

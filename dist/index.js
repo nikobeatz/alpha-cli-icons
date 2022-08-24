@@ -54,6 +54,11 @@ const ArrowDirectionS = (props) => (React.createElement("svg", Object.assign({ x
     React.createElement("path", { d: "M0 0h17v17H0z" }),
     React.createElement("path", { d: "M1.345 14.674V4.447h2.36v6.055l9.177-9.177 1.796 1.796-9.193 9.193h6.874v2.36H1.345z", fill: "currentColor" })));
 
+const AusM = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 24, height: 24, fill: "none", viewBox: "0 0 24 24" }, props),
+    React.createElement("path", { d: "M22.2026 4.14001H1.79742C0.804703 4.14001 0 4.94472 0 5.93744V9.38139H24V5.93744C24 4.94472 23.1953 4.14001 22.2026 4.14001Z", fill: "#D42020" }),
+    React.createElement("path", { d: "M0 18.0667C0 19.0594 0.804703 19.8641 1.79742 19.8641H22.2026C23.1952 19.8641 24 19.0594 24 18.0667V14.6227H0V18.0667Z", fill: "#D42020" }),
+    React.createElement("path", { d: "M24 9.38129H0V14.6224H24V9.38129Z", fill: "#F5F5F5" })));
+
 const BellDotM = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 24, height: 24, fill: "none", viewBox: "0 0 24 24" }, props),
     React.createElement("path", { d: "M0 0h24v24H0z" }),
     React.createElement("path", { d: "M11.918 22c1.632 0 2.997-1.173 3.31-2.725h-6.62c.314 1.552 1.68 2.725 3.31 2.725zM18.235 11.1h-.011c-3.476 0-6.306-2.852-6.306-6.358 0-.964.22-1.875.603-2.694-.198-.02-.399-.031-.603-.031-3.482 0-6.305 2.846-6.305 6.358v2.532a6.111 6.111 0 01-2.151 4.663 1.597 1.597 0 00-.496 1.631c.191.712.888 1.166 1.62 1.166h14.66c.768 0 1.491-.502 1.647-1.26a1.6 1.6 0 00-.538-1.555c-1.31-1.107-2.067-2.734-2.12-4.453z", fill: "currentColor" }),
@@ -1265,6 +1270,10 @@ const PlusS = (props) => (React.createElement("svg", Object.assign({ xmlns: "htt
     React.createElement("path", { d: "M0 0h17v16H0z" }),
     React.createElement("path", { d: "M8.664 2.155H7.355v5.19h-5.19v1.31h5.19v5.19h1.31v-5.19h5.19v-1.31h-5.19v-5.19z", fill: "currentColor" })));
 
+const PolandM = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 24, height: 24, fill: "none", viewBox: "0 0 24 24" }, props),
+    React.createElement("path", { d: "M0 18.0667C0 19.0594 0.804703 19.8641 1.79742 19.8641H22.2026C23.1952 19.8641 24 19.0594 24 18.0667V12.0021H0V18.0667Z", fill: "#D42020" }),
+    React.createElement("path", { d: "M22.2026 4.14001H1.79742C0.804703 4.14001 0 4.94472 0 5.93744V12.0021H24V5.93744C24 4.94472 23.1953 4.14001 22.2026 4.14001Z", fill: "#F5F5F5" })));
+
 const PortfolioM = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 24, height: 24, fill: "none", viewBox: "0 0 24 24" }, props),
     React.createElement("path", { d: "M0 0h25v25H0z" }),
     React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M15.339 6.165h4.374a2.29 2.29 0 012.292 2.292v2.708h-5v-1.042a.63.63 0 00-.625-.625.63.63 0 00-.625.625v1.042h-7.5v-1.042a.63.63 0 00-.625-.625.63.63 0 00-.625.625v1.042h-5V8.457a2.29 2.29 0 012.292-2.292h4.375v-.833c0-.92.747-1.667 1.667-1.667h3.333c.92 0 1.667.748 1.667 1.667v.833zm-1.667 0v-.833h-3.333v.833h3.333z", fill: "currentColor" }),
@@ -1619,6 +1628,7 @@ exports.AppStoreM = AppStoreM;
 exports.AppStoreS = AppStoreS;
 exports.ArrowDirectionM = ArrowDirectionM;
 exports.ArrowDirectionS = ArrowDirectionS;
+exports.AusM = AusM;
 exports.BellDotM = BellDotM;
 exports.BellDotS = BellDotS;
 exports.BellM = BellM;
@@ -1886,6 +1896,7 @@ exports.PlayM = PlayM;
 exports.PlayS = PlayS;
 exports.PlusM = PlusM;
 exports.PlusS = PlusS;
+exports.PolandM = PolandM;
 exports.PortfolioM = PortfolioM;
 exports.PortfolioS = PortfolioS;
 exports.PresentM = PresentM;
