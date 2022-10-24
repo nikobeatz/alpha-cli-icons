@@ -32,7 +32,10 @@ for (const icon of icons) {
   const svg = fs.readFileSync(icon, 'utf8');
   const componentName = path.parse(icon).name;
 
-  const svgProps = componentName.slice(-1) === "M" ? { height: 24, width: 24, viewBox: '0 0 24 24' } : { height: 16, width: 16, viewBox: '0 0 16 16' }
+  let svgProps = { height: 16, width: 16, viewBox: '0 0 16 16' };
+  if(componentName.includes("MColor") || componentName.slice(-1) === "M") {
+    svgProps = { height: 24, width: 24, viewBox: '0 0 24 24' };
+  }
   
   const componentCode = svgr.sync(
     svg,
