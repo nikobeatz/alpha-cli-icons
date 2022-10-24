@@ -1087,6 +1087,12 @@ const OpenS = (props) => (React.createElement("svg", Object.assign({ xmlns: "htt
     React.createElement("path", { d: "M0 0h17v17H0z" }),
     React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M10.54 1.485a.553.553 0 100 1.106h2.133L8.595 6.67a.553.553 0 10.782.782l4.102-4.101v2.18a.553.553 0 001.106 0V2.206a.553.553 0 00-.256-.467.553.553 0 00-.466-.255H10.54zm-7.105 2.33h3v-1.3h-3a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3h-1.3v3a.7.7 0 01-.7.7h-8a.7.7 0 01-.7-.7v-8a.7.7 0 01.7-.7z", fill: "currentColor" })));
 
+const OssetiaMColor = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 16, height: 16, fill: "none", viewBox: "0 0 16 16" }, props),
+    React.createElement("path", { d: "M0 0h24v25H0z" }),
+    React.createElement("path", { d: "M0 18.067c0 .992.805 1.797 1.797 1.797h20.406c.992 0 1.797-.805 1.797-1.797v-3.444H0v3.444z", fill: "#FAB123" }),
+    React.createElement("path", { d: "M22.203 4.14H1.797C.805 4.14 0 4.945 0 5.937v3.444h24V5.937c0-.992-.805-1.797-1.797-1.797z", fill: "#F5F5F5" }),
+    React.createElement("path", { d: "M24 9.381H0v5.241h24v-5.24z", fill: "#D42020" })));
+
 const PanelPeopleM = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 24, height: 24, fill: "none", viewBox: "0 0 24 24" }, props),
     React.createElement("path", { d: "M0 0h24v25H0z" }),
     React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M4.333 5.165A3.833 3.833 0 00.5 8.998v2.19a3.833 3.833 0 003.833 3.834h8.82a5.75 5.75 0 017.602-6.246 3.833 3.833 0 00-3.826-3.611H4.333zm-1.643 7.12c0-.303.246-.549.548-.549h2.738a.548.548 0 110 1.096H3.238a.548.548 0 01-.548-.548zm5.477 0c0-.303.245-.549.547-.549h2.738a.548.548 0 110 1.096H8.714a.548.548 0 01-.547-.548zm-3.56-4.382a1.369 1.369 0 100 2.738 1.369 1.369 0 000-2.738zm4.107 1.37a1.37 1.37 0 112.738 0 1.37 1.37 0 01-2.738 0z", fill: "currentColor" }),
@@ -1916,6 +1922,7 @@ exports.NextS = NextS;
 exports.NumberM = NumberM;
 exports.NumberS = NumberS;
 exports.OpenS = OpenS;
+exports.OssetiaMColor = OssetiaMColor;
 exports.PanelPeopleM = PanelPeopleM;
 exports.PanelPeopleS = PanelPeopleS;
 exports.PanelWith = PanelWith;

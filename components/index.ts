@@ -235,6 +235,7 @@ export * from './NextS';
 export * from './NumberM';
 export * from './NumberS';
 export * from './OpenS';
+export * from './OssetiaMColor';
 export * from './PanelPeopleM';
 export * from './PanelPeopleS';
 export * from './PanelWith';
