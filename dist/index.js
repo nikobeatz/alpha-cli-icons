@@ -1087,7 +1087,7 @@ const OpenS = (props) => (React.createElement("svg", Object.assign({ xmlns: "htt
     React.createElement("path", { d: "M0 0h17v17H0z" }),
     React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M10.54 1.485a.553.553 0 100 1.106h2.133L8.595 6.67a.553.553 0 10.782.782l4.102-4.101v2.18a.553.553 0 001.106 0V2.206a.553.553 0 00-.256-.467.553.553 0 00-.466-.255H10.54zm-7.105 2.33h3v-1.3h-3a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3h-1.3v3a.7.7 0 01-.7.7h-8a.7.7 0 01-.7-.7v-8a.7.7 0 01.7-.7z", fill: "currentColor" })));
 
-const OssetiaMColor = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 16, height: 16, fill: "none", viewBox: "0 0 16 16" }, props),
+const OssetiaMColor = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: 24, height: 24, fill: "none", viewBox: "0 0 24 24" }, props),
     React.createElement("path", { d: "M0 0h24v25H0z" }),
     React.createElement("path", { d: "M0 18.067c0 .992.805 1.797 1.797 1.797h20.406c.992 0 1.797-.805 1.797-1.797v-3.444H0v3.444z", fill: "#FAB123" }),
     React.createElement("path", { d: "M22.203 4.14H1.797C.805 4.14 0 4.945 0 5.937v3.444h24V5.937c0-.992-.805-1.797-1.797-1.797z", fill: "#F5F5F5" }),
@@ -1601,7 +1601,7 @@ const TruckS = (props) => (React.createElement("svg", Object.assign({ xmlns: "ht
     React.createElement("path", { d: "M0 0h17v16H0z" }),
     React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M1.813 3.89v5.674c0 .105.085.19.19.19h6.43a.19.19 0 00.191-.19V3.89a.57.57 0 00-.57-.571h-5.67a.57.57 0 00-.571.57zm3.394 8.8a1.184 1.184 0 100-2.367 1.184 1.184 0 000 2.368zm0-1.775a.592.592 0 110 1.184.592.592 0 010-1.184zm-3.672-.592h2.653c-.279.24-.471.577-.527.958H1.535a.19.19 0 01-.19-.19v-.578a.19.19 0 01.19-.19zm9.866 2.368a1.184 1.184 0 100-2.368 1.184 1.184 0 000 2.368zm0-1.776a.592.592 0 110 1.184.592.592 0 010-1.184zm3.277.176v-.578a.19.19 0 00-.19-.19h-.463V7.738c0-.304-.091-.6-.26-.852l-1.159-1.715a1.522 1.522 0 00-1.261-.67H9.549a.38.38 0 00-.38.38v5.442H6.226c.279.24.47.577.526.958h3.102c.11-.756.76-1.338 1.546-1.338s1.436.582 1.546 1.338h1.54a.19.19 0 00.191-.19z", fill: "currentColor" })));
 
-const UnitedStatesMColor = (props) => (React.createElement("svg", Object.assign({ width: 16, height: 16, fill: "none", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 16 16" }, props),
+const UnitedStatesMColor = (props) => (React.createElement("svg", Object.assign({ width: 24, height: 24, fill: "none", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24" }, props),
     React.createElement("path", { d: "M22.203 4.14H1.797C.805 4.14 0 4.945 0 5.938v12.129c0 .992.805 1.797 1.797 1.797h20.406c.992 0 1.797-.805 1.797-1.797V5.937c0-.992-.805-1.797-1.797-1.797z", fill: "#F5F5F5" }),
     React.createElement("path", { d: "M.099 5.35H23.9a1.798 1.798 0 00-1.698-1.21H1.797C1.011 4.14.342 4.646.1 5.35zM24 8.978H0v1.21h24v-1.21zM24 6.559H0v1.209h24v-1.21zM0 12.193c0 .228.185.414.414.414H24v-1.21H0v.796zM24 16.236H0v1.21h24v-1.21zM23.901 18.655H.1c.243.704.912 1.21 1.698 1.21h20.406c.786 0 1.454-.506 1.698-1.21zM24 13.817H0v1.21h24v-1.21z", fill: "#D42020" }),
     React.createElement("path", { d: "M.414 12.607h10.345a.414.414 0 00.413-.414v-7.64a.414.414 0 00-.413-.413H1.797C.805 4.14 0 4.945 0 5.937v6.256c0 .229.185.414.414.414z", fill: "#41479B" }),

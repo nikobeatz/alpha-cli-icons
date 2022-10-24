@@ -3,10 +3,10 @@ import * as React from "react";
 export const OssetiaMColor = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={16}
-    height={16}
+    width={24}
+    height={24}
     fill="none"
-    viewBox="0 0 16 16"
+    viewBox="0 0 24 24"
     {...props}
   >
     <path d="M0 0h24v25H0z" />
