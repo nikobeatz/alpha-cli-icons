@@ -348,6 +348,7 @@ export * from './TrashM';
 export * from './TrashS';
 export * from './TruckM';
 export * from './TruckS';
+export * from './UnitedStatesMColor';
 export * from './VerifiedM';
 export * from './VirusM';
 export * from './VirusS';

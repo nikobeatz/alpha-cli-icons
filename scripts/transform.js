@@ -48,7 +48,7 @@ for (const icon of icons) {
       ],
       // Replace hardcoded colors with `currentColor`
       svgoConfig: {
-        plugins: [{ convertColors: { currentColor: true } }]
+        plugins: [{ convertColors: { currentColor: componentName.includes("Color") ? false : true } }]
       },
       // Replace dimentions
       svgProps: svgProps
