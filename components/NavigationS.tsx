@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 
 export const NavigationS = (props: React.SVGProps<SVGSVGElement>) => (
   <svg

@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 
 export const WhatsappM = (props: React.SVGProps<SVGSVGElement>) => (
   <svg

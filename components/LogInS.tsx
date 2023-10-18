@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 
 export const LogInS = (props: React.SVGProps<SVGSVGElement>) => (
   <svg

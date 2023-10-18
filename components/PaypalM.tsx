@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 
 export const PaypalM = (props: React.SVGProps<SVGSVGElement>) => (
   <svg

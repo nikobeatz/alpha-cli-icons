@@ -1,4 +1,5 @@
 export * from './ActionCopyM';
+export * from './ActionCopyS';
 export * from './AddMarkM';
 export * from './AddMarkS';
 export * from './AirConditioningM';
