@@ -3,5 +3,3 @@ node_modules
 docs
 yarn-error.log
 .DS_Store
-dist
-dist/**
